@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Eyes - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Eco Eyes</h1>
+        </header>
+        <main>
+            <div class="actions">
+                <button id="user-login-btn">User Login</button>
+                <button id="admin-login-btn">Admin Login</button>
+            </div>
+
+            <!-- User Login Form -->
+            <!-- User Login Form -->
+            <div id="user-form" class="login-form hidden">
+                <button class="close-btn" onclick="closeForm('user-form')">&times;</button>
+                <h2>User Login</h2>
+                <form id="user-login-form" action="nextpage.html" method="GET">
+                    <label for="user-name">NAME:</label>
+                    <input type="text" id="user-name" name="user-name" placeholder="Enter Name" required>
+                    
+                    <label for="user-phno">PHONE NUMBER:</label>
+                    <input type="text" id="user-phno" name="user-phno" placeholder="Enter Phone Number" required>
+                    
+                    <button type="submit">Enter</button>
+                </form>
+            </div>
+
+
+            <!-- Admin Login Form -->
+            <div id="admin-form" class="login-form hidden">
+                <button class="close-btn" onclick="closeForm('admin-form')">&times;</button>
+                <h2>Admin Login</h2>
+                <form>
+                    <label for="admin-email">USERNAME:</label>
+                    <input type="email" id="admin-email" name="admin-email" placeholder="Enter Username" required>
+                    
+                    <label for="admin-password">PASSWORD:</label>
+                    <input type="password" id="admin-password" name="admin-password" placeholder="Enter admin password" required>
+                    
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
